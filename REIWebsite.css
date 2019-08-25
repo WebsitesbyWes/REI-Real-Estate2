@@ -1,0 +1,73 @@
+nav {
+    background-color: black;
+    height: 75px;
+    position: fixed;
+    width: 100%; 
+}
+
+ul {text-align: center;}
+
+li {
+      height: 100%;
+      vertical-align: middle;
+      display: inline-block;
+      transform: translate(0, 50%);
+      font-family: serif;
+      color: grey;
+      text-align: center;
+      font-size: 1.3em;
+}
+
+li a {text-decoration: none;} 
+
+nav::after {clear:both;
+            display: table;
+            content""}
+
+
+a:visited {
+    color: grey;
+}
+
+.space {
+    margin-left: 150px;
+}
+
+.card {
+    vertical-align: middle; 
+    border: 3px solid red;  
+    height: 500px;
+    width: 500px;
+    margin:  auto;
+    display: relative;
+    color: red;
+    
+}
+
+.card p {vertical-align: middle;
+         text-align: center;}
+*/
+.wrapper {
+    margin: 200px;
+    width: 100%;
+    border: 3px solid red;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.middle {vertical-align: middle
+        color: red;}
+body {
+    height: vh;
+    width: vw;
+    margin: 0px;
+    background-image: url("pictures/starbackground.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {display: fixed;
+            height: 75px;
+            width: 100%;
+            }
+
