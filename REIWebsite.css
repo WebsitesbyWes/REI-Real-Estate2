@@ -1,73 +1,159 @@
-nav {
-    background-color: black;
-    height: 75px;
-    position: fixed;
-    width: 100%; 
+/*
+* {
+    border: 1px solid red;
 }
+*/
 
-ul {text-align: center;}
-
-li {
-      height: 100%;
-      vertical-align: middle;
-      display: inline-block;
-      transform: translate(0, 50%);
-      font-family: serif;
-      color: grey;
-      text-align: center;
-      font-size: 1.3em;
-}
-
-li a {text-decoration: none;} 
-
-nav::after {clear:both;
-            display: table;
-            content""}
-
-
-a:visited {
-    color: grey;
-}
-
-.space {
-    margin-left: 150px;
-}
-
-.card {
-    vertical-align: middle; 
-    border: 3px solid red;  
-    height: 500px;
-    width: 500px;
-    margin:  auto;
-    display: relative;
-    color: red;
+body {
+    margin: 0px;
+    max-width: 100%;
+    background-image: url(Pictures/starBackground.jpeg);
+    background-size: cover;
     
 }
 
-.card p {vertical-align: middle;
-         text-align: center;}
-*/
-.wrapper {
-    margin: 200px;
+
+
+nav {
+    position: fixed;
+    background-color: black;
     width: 100%;
-    border: 3px solid red;
-    z-index: 3;
-    box-sizing: border-box;
+    height: 60px;
+    z-index: 1;
 }
 
-.middle {vertical-align: middle
-        color: red;}
-body {
-    height: vh;
-    width: vw;
+ul {
+    text-align: center;
     margin: 0px;
-    background-image: url("pictures/starbackground.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 0px;
 }
 
-.container {display: fixed;
-            height: 75px;
-            width: 100%;
-            }
+li {
+    text-align: center;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0px;
+    
+}
+    
+li a {
+    text-decoration: none;
+    color: grey;
+}
 
+
+
+.listRight {
+    padding-left: 75px;
+}
+        
+.navOuter {
+   height: 60px;
+   width: 100%;
+   margin: 0px; 
+}
+
+.navOuter::after {
+    clear: both;
+}
+
+li.dropDownMenu {
+    display: none;
+}
+
+a::visited {
+    color: white; 
+}
+
+.navOuter::after 
+{
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+.left-box {
+    display: inline-block;
+    margin: 8 100px 8px 0;
+    height: 500px;
+    width: 400px;
+}
+
+.anim-typewriter-left {
+    font-family: Roboto Mono;
+    overflow: hidden;
+    border-right: 1px solid grey;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    animation:
+        typing 10s steps(120, end),
+    blink-caret .4s step-end infinite;
+    color: grey;
+    font-size: 40px;
+    white-space: nowrap;
+    
+}
+
+@keyframes typing {from 
+    {width: 0}
+    to (width: 100%)
+}  
+
+@keyframes blink-caret{
+    from, to {border-color: transparent }
+    50% {border-color: grey;}
+}
+
+ .logobox {height:                500px;
+        width: 500px;
+        border: 1px solid red;
+        position: relative;
+        margin: 100px auto 0;
+        margin-bottom: 250px;
+        display: inline-block;
+     
+}
+      p.logo {
+         line-height: 500px;
+         vertical-align: center;
+         text-align: center;
+         margin: 0px;
+         color: grey;
+          
+          
+     }
+
+.content {
+    width: 100%;
+    background-color: white;
+    
+}
+
+.content p {
+    font-size: 1em;
+    margin: 0px;
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+    li.listLeft {display:   none;
+    }
+     
+@media screen and (max-width: 680px) {
+    li.listRight {display:   none;
+    }
+
+    @media screen and (max-width: 680px) {li.dropDownMenu 
+        {
+            
+            display: inline;
+            float: left;
+            padding-left: 25px;
+            
+        }
+    }
